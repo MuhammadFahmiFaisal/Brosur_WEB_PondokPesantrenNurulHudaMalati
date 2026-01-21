@@ -1,91 +1,118 @@
-# Pondok Pesantren Nurul Huda Malati
+# 🕌 Pondok Pesantren Nurul Huda Malati
 
-Website profil resmi untuk Pondok Pesantren Nurul Huda Malati. Website ini dirancang untuk memberikan informasi lengkap mengenai profil pondok, program pendidikan, fasilitas, galeri kegiatan, serta informasi pendaftaran bagi calon santri baru.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73C92?style=for-the-badge&logo=vite&logoColor=white)
 
-## 📋 Fitur Utama
+Selamat datang di repositori resmi **Website Profil Pondok Pesantren Nurul Huda Malati**.
 
-Website ini mencakup beberapa bagian utama:
-
-*   **Halaman Utama (Hero)**: Tampilan awal yang menarik dengan informasi singkat dan navigasi utama.
-*   **Tentang Kami (About)**: Sejarah, visi, dan misi Pondok Pesantren Nurul Huda Malati.
-*   **Program Pendidikan (Programs)**: Informasi mengenai jenjang pendidikan dan program unggulan yang tersedia.
-*   **Fasilitas (Facilities)**: Galeri dan deskripsi fasilitas penunjang belajar mengajar.
-*   **Galeri (Gallery & Video)**: Dokumentasi kegiatan santri dalam bentuk foto dan video.
-*   **Info Pendaftaran (Admissions)**: Informasi lengkap mengenai syarat dan alur pendaftaran santri baru (PSB).
-*   **Kontak (Contact)**: Formulir untuk mengirim pesan langsung dan informasi kontak (WhatsApp, Email, Lokasi).
-
-## 🛠️ Teknologi yang Digunakan
-
-Proyek ini dibangun menggunakan teknologi web modern:
-
-*   **[React](https://react.dev/)**: Library JavaScript untuk membangun antarmuka pengguna.
-*   **[Vite](https://vitejs.dev/)**: Build tool yang cepat untuk pengembangan frontend modern.
-*   **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS utility-first untuk styling yang cepat dan responsif.
-*   **[TypeScript](https://www.typescriptlang.org/)**: Superset JavaScript dengan tipe data statis untuk kode yang lebih aman.
-*   **[EmailJS](https://www.emailjs.com/)**: Layanan untuk mengirim email langsung dari client-side (digunakan pada formulir kontak).
-
-## 🚀 Cara Menjalankan Proyek
-
-Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer lokal Anda:
-
-### Prasyarat
-
-Pastikan Anda telah menginstal **Node.js** di komputer Anda.
-
-### Instalasi
-
-1.  **Clone repositori ini** (jika menggunakan git) atau ekstrak file zip proyek.
-2.  **Buka terminal** dan arahkan ke direktori proyek.
-3.  **Instal dependensi** dengan menjalankan perintah:
-
-    ```bash
-    npm install
-    ```
-
-### Menjalankan Server Development
-
-Untuk menjalankan website dalam mode pengembangan (development):
-
-```bash
-npm run dev
-```
-
-Buka browser dan kunjungi alamat yang muncul di terminal (biasanya `http://localhost:5173`).
-
-### Build untuk Produksi
-
-Untuk membuat versi produksi yang siap di-deploy:
-
-```bash
-npm run build
-```
-
-Hasil build akan berada di folder `dist`.
-
-## 📂 Struktur Folder
-
-Berikut adalah gambaran singkat struktur folder proyek:
-
-```
-pondok-pesantren-nurul-huda-malati/
-├── components/         # Komponen-komponen React (Header, Hero, About, dll)
-├── public/             # Aset statis (gambar, ikon, dll)
-├── src/                # Source code tambahan (jika ada)
-├── App.tsx             # Komponen utama aplikasi
-├── index.css           # File CSS global (termasuk direktif Tailwind)
-├── index.html          # File HTML utama
-├── index.tsx           # Entry point aplikasi React
-├── package.json        # Daftar dependensi dan skrip proyek
-├── tailwind.config.js  # Konfigurasi Tailwind CSS
-├── tsconfig.json       # Konfigurasi TypeScript
-└── vite.config.ts      # Konfigurasi Vite
-```
-
-## 📝 Catatan Tambahan
-
-*   **Formulir Kontak**: Formulir kontak menggunakan EmailJS. Konfigurasi ID layanan dan template saat ini tertanam di `components/Contact.tsx`.
-*   **Peta Lokasi**: Peta lokasi menggunakan iframe Google Maps yang tertanam di `components/Contact.tsx`.
+Platform digital modern yang dirancang untuk menjadi pusat informasi terpadu bagi wali santri, calon santri, dan masyarakat umum. Website ini tidak hanya menyajikan profil pondok secara komprehensif, tetapi juga memfasilitasi proses Penerimaan Santri Baru (PSB) secara online.
 
 ---
 
-Dibuat dengan ❤️ untuk Pondok Pesantren Nurul Huda Malati.
+## ✨ Fitur Unggulan
+
+Website ini dilengkapi dengan berbagai fitur interaktif dan informatif:
+
+### 🏠 Halaman Utama & Profil
+- **Hero Section Imersif**: Tampilan awal yang modern dengan navigasi intuitif.
+- **Profil Lengkap**: Sejarah, Visi, dan Misi pondok pesantren yang disajikan dengan tata letak menarik.
+- **Struktur Organisasi**: Informasi mengenai pengurus dan tenaga pengajar.
+
+### 📚 Pendidikan & Dakwah
+- **Program Pendidikan**: Detail kurikulum dan jenjang pendidikan (SMP, SMK, Kepesantrenan).
+- **Berita Terkini**: Artikel dan kabar terbaru seputar kegiatan pondok (`NewsFeature`).
+- **Jadwal Kegiatan**: Informasi agenda harian dan mingguan santri.
+
+### 📷 Galeri Multimedia
+- **Galeri Foto**: Dokumentasi visual kegiatan santri.
+- **Galeri Video**: Integrasi video kegiatan, kajian, dan dokumenter (`VideoGallery`).
+
+### 📝 Pendaftaran Online (PSB)
+- **Formulir Digital**: Pendaftaran santri baru yang mudah diakses dari mana saja (`RegistrationForm`).
+- **Integrasi Data**: (Opsional) Terhubung dengan Google Sheets/Apps Script untuk manajemen data pendaftar.
+
+### 📱 Desain Responsif
+- **Mobile-First**: Tampilan yang optimal di semua perangkat, mulai dari smartphone hingga desktop.
+- **Interaktif**: Animasi halus dan transisi antar halaman untuk pengalaman pengguna yang lebih baik.
+
+---
+
+## 🛠️ Teknologi
+
+Project ini dibangun dengan **Modern Web Stack** untuk performa tinggi dan kemudahan pengembangan:
+
+| Teknologi | Deskripsi |
+| :--- | :--- |
+| **[React](https://react.dev/)** | Library UI utama untuk membangun komponen interaktif. |
+| **[TypeScript](https://www.typescriptlang.org/)** | Menjamin keamanan tipe data dan skalabilitas kode. |
+| **[Vite](https://vitejs.dev/)** | Build tool generasi baru yang super cepat. |
+| **[Tailwind CSS](https://tailwindcss.com/)** | Framework utility-first untuk styling yang cepat dan konsisten. |
+| **[Framer Motion / Animations]** | (Jika ada) Untuk animasi elemen UI yang halus. |
+| **[React Router](https://reactrouter.com/)** | Manajemen navigasi antar halaman (SPA). |
+
+---
+
+## 🚀 Panduan Instalasi (Local Development)
+
+Ikuti langkah berikut untuk menjalankan proyek ini di komputer Anda:
+
+### 1. Prasyarat
+Pastikan Anda sudah menginstal:
+- [Node.js](https://nodejs.org/) (Versi LTS disarankan)
+- [Git](https://git-scm.com/)
+
+### 2. Clone & Install
+```bash
+# Clone repositori ini
+git clone https://github.com/MuhammadFahmiFaisal/Brosur_WEB_PondokPesantrenNurulHudaMalati.git
+
+# Masuk ke direktori proyek
+cd Brosur_WEB_PondokPesantrenNurulHudaMalati
+
+# Instal dependensi
+npm install
+```
+
+### 3. Jalankan Server Development
+```bash
+npm run dev
+```
+Buka browser dan kunjungi alamat yang muncul (biasanya `http://localhost:5173`).
+
+### 4. Build untuk Produksi
+Untuk membuat versi optimal yang siap di-deploy ke hosting:
+```bash
+npm run build
+```
+File hasil build akan tersedia di folder `dist/`.
+
+---
+
+## 📂 Struktur Proyek
+
+```
+/
+├── components/     # Komponen UI React (Reusable & Page Sections)
+├── public/         # Aset statis (Gambar, Icon, Logo)
+├── App.tsx         # Root Component & Routing Setup
+├── index.css       # Global Styles & Tailwind Directives
+├── tailwind.config # Konfigurasi Tema & Desain Tailwind
+└── vite.config     # Konfigurasi Build Vite
+```
+
+---
+
+## 📞 Kontak & Informasi
+
+Jika Anda memiliki pertanyaan seputar pengembangan website ini, silakan hubungi tim pengembang atau administrator pondok.
+
+**Pondok Pesantren Nurul Huda Malati**
+*   📍 Alamat: [Alamat Lengkap Pondok]
+*   📧 Email: [Email Pondok]
+*   🌐 Website: [URL Website Live]
+
+---
+
+*Dibuat dengan dedikasi untuk kemajuan pendidikan Islam.*
